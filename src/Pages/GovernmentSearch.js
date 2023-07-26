@@ -86,6 +86,17 @@ export default function GovernmentSearch(props) {
 		}
 	}
 
+	const enter = () => {
+		setSearchHeader("Results: ");
+		const input = {
+			language: Language.English,
+			name: searchInput,
+			sortDir: SortDir.Asc,
+			type: BcgnType.NonProfit
+		}
+		setCallTextInput(input)
+	}
+
 	const searchField = (
 		<div id="text-field">
 			<WISETextField
@@ -94,6 +105,7 @@ export default function GovernmentSearch(props) {
 				input={searchInput}
 				handleChange={handleSearchChange}
 				onKeyDown={submit}
+				handleEnter={enter}
 			/>
 		</div>
 	);
