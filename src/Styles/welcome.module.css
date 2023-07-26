@@ -1,0 +1,110 @@
+.page{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    z-index: -3;
+    /* Space Cadet */
+    background: #11224D;
+    display: flex;
+    align-items: center;
+}
+
+.page1{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    
+    z-index: -2;
+    background: url('../Assets/For Cities Hero Graphic.png')  no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.page2{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    background: rgba(17, 34, 77, 0.7);
+}
+
+
+.page3{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 669px;
+    height: 375px;
+    background: var(--space-cadet);
+    border-radius: 30px;
+}
+
+
+
+.text{
+    position: relative;
+    margin-top: 100px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 97px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: -0.333333px;
+
+    color: #FFFFFF;
+}
+
+.text1{
+    position: relative;
+   
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: -0.333333px;
+
+    color: #FFFFFF;
+}
+
+.button{
+    position: relative;
+    width: 50%;
+    left: 25%;
+}
+.button1{
+    position: relative;
+    width: 50%;
+    left: 25%;
+    top:20%;
+    transform: translateX(25%);
+}
+
+.button2{
+    position: relative;
+    width: 90%;
+    left: 5%;
+    bottom: 15%;
+    top:2%;
+    transform: translateY(50%);
+}

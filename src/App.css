@@ -1,0 +1,80 @@
+.App {
+
+}
+
+.pageDisplay {
+  display: inline-block;
+  overflow-x: hidden;
+  width: 70%;
+}
+
+h1 {
+  font-family: 'Inter-Bold';
+  font-size: 60px;
+}
+
+h2 {
+  font-family: 'Inter-Bold';
+  font-size: 48px;
+}
+
+h3 {
+  font-family: 'Inter-SemiBold';
+  font-size: 36px;
+}
+
+h4 {
+  font-family: 'Inter-Bold';
+  font-size: 24px;
+}
+
+h5 {
+  font-family: 'Inter-SemiBold';
+  font-size: 20px;
+}
+
+h6 {
+  font-family: 'Inter-Regular';
+  font-size: 20px;
+}
+
+p {
+  font-family: 'Inter-Light';
+  font-size: 18px;
+}
+
+@font-face {
+  font-family: 'Inter-Bold';
+  font-weight: 700;
+  src: local('Inter-Bold'), url(./Fonts/Inter-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Inter-SemiBold';
+  font-weight: 600;
+  src: local('Inter-SemiBold'), url(./Fonts/Inter-SemiBold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Inter-Medium';
+  font-weight: 500;
+  src: local('Inter-Medium'), url(./Fonts/Inter-Medium.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Inter-Regular';
+  font-weight: 400;
+  src: local('Inter-Regular'), url(./Fonts/Inter-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Inter-Light';
+  font-weight: 300;
+  src: local('Inter-Light'), url(./Fonts/Inter-Light.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Inter-Thin';
+  font-weight: 200;
+  src: local('Inter-Thin'), url(./Fonts/Inter-Thin.ttf) format('truetype');
+}

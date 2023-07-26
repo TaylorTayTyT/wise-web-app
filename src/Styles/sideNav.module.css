@@ -1,0 +1,66 @@
+.sidenav {
+    height: 100%;
+    width: 30%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: var(--cultured);
+}
+
+.logo {
+    margin: auto; 
+    width: fit-content;
+    margin-top: 74px;
+}
+
+.title {
+    font-family: 'Inter-SemiBold';
+    font-size: 36px;
+    color: var(--space-cadet);
+    margin-top: 42px;
+    margin-left: 40px;
+}
+
+.btncontainer {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 20px;
+}
+
+.btn {
+    margin-bottom: 16px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+@media screen and (max-width: 1000px) {
+    .sidenav {
+        width: 0%;
+    }
+
+    .title {
+        margin-left: 20px;
+        margin-right: 20px;
+        width: auto;
+    }
+
+    .btncontainer {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .navButton {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-right: 40px;
+        margin-top: 52px;
+
+    }
+
+    .closeButton {
+        float: right;
+    }     
+}

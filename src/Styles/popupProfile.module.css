@@ -1,0 +1,77 @@
+.maincontainer{
+
+}
+.header{
+    /* position: relative; */
+    /* flex-direction: row; */
+    
+    padding: 50px 100px 40px 100px;
+    border-radius: 30px;
+    position: sticky;
+    height: fit-content;
+    background-color: var(--sandy-brown);
+    }
+    .headertextButton{
+        float:right;
+        position: relative;
+
+    }
+    .container{
+        overflow:hidden;
+        position: relative;
+        clear: both;
+    }
+
+    .image{
+        border-radius: 30px;
+        width: 200px;
+        height: 200px;
+        float: left;
+        background-image: url("https://ik.imagekit.io/demo/default-image.jpg?ik-sdk-version=react-1.x.x");
+    }
+    
+    .textcontainer{
+        float:left;
+    }
+    .title{
+        font-family: 'Inter-Bold';
+        font-size: 48px;
+        color: var(--space-cadet);
+        margin-top: 39px;
+        margin-left: 60px;
+        margin-bottom: 0px;
+
+    
+    }
+    .text{
+        font-family: 'Inter-SemiBold';
+        font-size: 36px;
+        color: var(--space-cadet);
+        margin-top: 20px;
+        margin-left: 60px;
+
+    }
+    
+    .primary__button{
+        float:right;
+        margin-top: 75px;
+    }
+    
+    .secondary__button{
+        float:right;
+        margin-top: 75px;
+        margin-right: 20px;
+    }
+    .cards{
+        padding-top: 40px;
+        padding-left: 100px;
+        padding-right: 100px;
+
+    }
+    .cardwrapper {
+        margin-bottom: 40px;
+      }
+
+    .report__button{
+        padding: 40px;
+    }

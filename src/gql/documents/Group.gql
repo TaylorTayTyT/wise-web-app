@@ -1,0 +1,76 @@
+query Group($id: ID!) {
+	group(id: $id) {
+		name
+		description
+		tags
+		activities
+		organizerId
+		eventIds
+		contactInfo {
+			phone
+			email
+			website
+		}
+		location {
+			address
+			coordinates
+		}
+	}
+}
+
+query GroupsByRadius($input: GroupsByRadius!) {
+	groupsByRadius(input: $input) {
+		_id
+		name
+		description
+		location {
+			address
+			coordinates
+		}
+	}
+}
+
+query GroupsByName($input: GroupsByName!) {
+	groupsByName(input: $input) {
+		_id
+		name
+		description
+		location {
+			address
+			coordinates
+		}
+	}
+}
+
+query GroupsByTags($input: GroupsByTags!) {
+	groupsByTags(input: $input) {
+		_id
+		name
+		description
+		location {
+			address
+			coordinates
+		}
+	}
+}
+
+query GroupsByOrganizer($input: GroupsByOrganizer!) {
+	groupsByOrganizer(input: $input) {
+		_id
+		name
+		description
+		tags
+		location {
+			address
+			coordinates
+		}
+	}
+}
+
+mutation NewGroup($input: NewGroup!) {
+	newGroup(input: $input)
+}
+
+mutation EditGroup($input: EditGroup!) {
+	editGroup(input: $input)
+}

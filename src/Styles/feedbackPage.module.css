@@ -1,0 +1,52 @@
+.main_container{
+    width:100%;
+}
+
+.input_text{
+    padding: 40px 100px 40px 100px;
+}
+.input_text h5{
+    margin-bottom: 20px;
+}
+
+.buttons_container{
+    margin-top: 94px;
+}
+
+.cancel_button{
+    width: 25%;
+    margin: 25px;
+}
+
+.submit_button{
+    width: 25%;
+    margin: 25px;
+}
+
+@media (max-width:480px){
+    .main_container{
+        width:100%;
+    }
+
+    .header_container{
+        width:100%;
+    }
+
+    .input_text{
+        padding: 154px 40px 0px 40px;
+    }
+
+    .buttons_container{
+        display:block;
+        margin-top: 40px;
+    }
+
+    .cancel_button{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .submit_button{
+        width: 100%;
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,119 @@
+.header{
+    /* position: relative; */
+    /* flex-direction: row; */
+    
+    padding: 50px 100px 40px 100px;
+    border-radius: 30px;
+    position: sticky;
+    height: fit-content;
+    background-color: var(--sandy-brown);
+    }
+    .headertextButton{
+        float:right;
+        position: relative;
+
+    }
+    .container{
+        overflow:hidden;
+        position: relative;
+        clear: both;
+    }
+
+    .image{
+        border-radius: 30px;
+        width: 200px;
+        height: 200px;
+        float: left;
+        background-image: url("https://ik.imagekit.io/demo/default-image.jpg?ik-sdk-version=react-1.x.x");
+    }
+    
+    .textcontainer{
+        float:left;
+    }
+    .title{
+        font-family: 'Inter-Bold';
+        font-size: 48px;
+        color: var(--space-cadet);
+        margin-top: 39px;
+        margin-left: 60px;
+        margin-bottom: 0px;
+
+    
+    }
+    .text{
+        font-family: 'Inter-SemiBold';
+        font-size: 36px;
+        color: var(--space-cadet);
+        margin-top: 20px;
+        margin-left: 60px;
+
+    }
+    
+    .primary__button{
+        float:right;
+        margin-top: 75px;
+    }
+    
+    .secondary__button{
+        float:right;
+        margin-top: 75px;
+        margin-right: 20px;
+    }
+
+    @media (max-width: 480px) {
+.header {
+    padding: 30px 40px 10px 40px;
+  }
+  .headertextButton{
+    padding: 0px;
+    float:right;
+
+}
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  
+  .image {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+  .title {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    font-family: 'Inter-Semibold';
+    font-size: 36px
+  }
+  .text{
+    margin-top: 6px;
+    margin-left: 0px;
+    margin-bottom: 20px; 
+    font-family: 'Inter-Regular';
+    font-size: 20px;
+}
+.buttoncontainer{
+    display: flex;
+}
+.primary__button{
+    float:left;
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-bottom: 30px
+}
+
+.secondary__button{
+    float:right;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 20px;
+}
+}
+
+
+
+
+
+

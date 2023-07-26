@@ -1,0 +1,64 @@
+query BCGN($id: ID!) {
+	bcgn(id: $id) {
+		name
+		description
+		tags
+		services
+		groupIds
+		eventIds
+		reviews
+		contactInfo {
+			phone
+			email
+			website
+		}
+		location {
+			address
+			coordinates
+		}
+	}
+}
+
+query BCGNsByRadius($input: BCGNsByRadius!) {
+	bcgnsByRadius(input: $input) {
+		_id
+		name
+		description
+		location {
+			address
+			coordinates
+		}
+	}
+}
+
+query BCGNsByName($input: BCGNsByName!) {
+	bcgnsByName(input: $input) {
+		_id
+		name
+		description
+		location {
+			address
+			coordinates
+		}
+	}
+}
+
+query BCGNsByTags($input: BCGNsByTags!) {
+	bcgnsByTags(input: $input) {
+		_id
+		name
+		description
+		location {
+			address
+			coordinates
+		}
+	}
+}
+
+mutation NewBCGN($input: NewBCGN!) {
+	newBCGN(input: $input)
+}
+
+mutation EditBCGN($input: EditBCGN!) {
+	editBCGN(input: $input)
+}

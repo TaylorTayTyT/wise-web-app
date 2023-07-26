@@ -1,0 +1,79 @@
+query Event($id: ID!) {
+	event(id: $id) {
+		name
+		description
+		dateTime
+		location {
+			address
+			coordinates
+		}
+		contactInfo {
+			phone
+			email
+			website
+		}
+		rsvp
+		tags
+		organizerId
+	}
+}
+
+query EventsByRadius($input: EventsByRadius!) {
+	eventsByRadius(input: $input) {
+		_id
+		name
+		description
+		tags
+		location {
+			address
+			coordinates
+		}
+	}
+}
+
+query EventsByName($input: EventsByName!) {
+	eventsByName(input: $input) {
+		_id
+		name
+		description
+		tags
+		location {
+			address
+			coordinates
+		}
+	}
+}
+
+query EventsByTags($input: EventsByTags!) {
+	eventsByTags(input: $input) {
+		_id
+		name
+		description
+		tags
+		location {
+			address
+			coordinates
+		}
+	}
+}
+
+query EventsByOrganizer($input: EventsByOrganizer!) {
+	eventsByOrganizer(input: $input) {
+		_id
+		name
+		description
+		tags
+		location {
+			address
+			coordinates
+		}
+	}
+}
+
+mutation NewEvent($input: NewEvent!) {
+	newEvent(input: $input)
+}
+
+mutation EditEvent($input: EditEvent!) {
+	editEvent(input: $input)
+}

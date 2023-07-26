@@ -1,0 +1,53 @@
+.main_container{
+    width:100%;
+}
+
+.form_container{
+   text-align: justify;
+   padding: 40px 100px 40px 100px;
+}
+
+.form_container h5{
+    margin-top: 40px;
+    margin-bottom: 14px;
+}
+
+.form_container p{
+    margin-bottom:40px;
+}
+
+.image{
+    background-image: url('../Assets/sideBuild.png');
+    background-size: cover;
+}
+
+@media (max-width: 480px) {
+    .main_container{
+        width: 100%;
+    }
+    .nav_bar{
+        position:fixed;
+        width:100%;
+    }
+    .background_image{
+        display:none;
+    }
+    .form_container{
+        padding-top:170px;
+        padding-right:20px;
+        padding-left:20px;
+        padding-bottom: 92px;
+        width: 100%;
+     }
+
+     .form_container h5{
+        margin-top: 20px;
+        margin-bottom: 14px;
+    }
+
+    .form_container p{
+        margin-bottom:30px;
+    }
+
+    
+}

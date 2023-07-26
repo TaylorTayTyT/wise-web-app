@@ -1,0 +1,53 @@
+.page{
+    display: flex;
+    flex-direction: column;
+    justify-content:left;
+}
+
+.page2{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+}
+
+.page3{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+}
+
+.space{
+    height: 20px;
+}
+
+.item{
+    margin-top: 50px !important;
+    /* margin-left: 100px;
+    margin-right: 100px; */
+    width: 90%;
+    margin: auto;
+}
+
+.textBlock{
+    text-align: justify;
+    padding: 40px 100px 40px 100px;
+}
+
+.image{
+    background-image: url('../Assets/sideBuild.png');
+    background-size: cover;
+}
+
+.button{
+    width: 25%;
+    margin: 25px;
+}
+
+.buttonContainer {
+    margin-top: 20%;
+}
+

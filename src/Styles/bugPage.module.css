@@ -1,0 +1,51 @@
+.main_container{
+    width: 100%;
+}
+
+.secondary_container{
+    width: 100%;
+    padding: 40px 100px 40px 100px;
+}
+
+.buttons_container{
+    margin-top:56px;
+}
+
+.cancel_button_container{
+    width:25%;
+    margin:25px;
+}
+
+.submit_button_container{
+    width:25%;
+    margin:25px;
+}
+
+@media (max-width: 480px) {
+    .main_container{
+        width:100%;
+    }
+
+    .nav_bar{
+        width:100%;
+        position: fixed;
+    }
+
+    .secondary_container{
+        padding: 203px 40px 31px 40px;
+    }
+
+    .buttons_container{
+        display: block;
+        
+    }
+
+    .cancel_button_container{
+        width:100%;
+    }
+    
+    .submit_button_container{
+        margin-top: 36px;
+        width:100%;
+    }
+}
