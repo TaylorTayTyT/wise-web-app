@@ -73,19 +73,6 @@ export default function GovernmentSearch(props) {
 		/>
 	);
 
-	const submit = (e) => {
-		if (e.keyCode === 13) {
-			setSearchHeader("Results: ");
-			const input = {
-				language: Language.English,
-				name: searchInput,
-				sortDir: SortDir.Asc,
-				type: BcgnType.GovernmentEntity
-			}
-			setCallTextInput(input)
-		}
-	}
-
 	const enter = () => {
 		setSearchHeader("Results: ");
 		const input = {
@@ -104,7 +91,6 @@ export default function GovernmentSearch(props) {
 				placeholder="Search for Government Items..."
 				input={searchInput}
 				handleChange={handleSearchChange}
-				onKeyDown={submit}
 				handleEnter={enter}
 			/>
 		</div>

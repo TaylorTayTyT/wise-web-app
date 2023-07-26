@@ -73,19 +73,6 @@ export default function NonprofitSearch(props) {
 		/>
 	);
 
-	const submit = (e) => {
-		if (e.keyCode === 13) {
-			setSearchHeader("Results: ");
-			const input = {
-				language: Language.English,
-				name: searchInput,
-				sortDir: SortDir.Asc,
-				type: BcgnType.NonProfit
-			}
-			setCallTextInput(input)
-		}
-	}
-
 	const enter = () => {
 		setSearchHeader("Results: ");
 		const input = {
@@ -104,7 +91,6 @@ export default function NonprofitSearch(props) {
 				placeholder="Search for Nonprofits..."
 				input={searchInput}
 				handleChange={handleSearchChange}
-				onKeyDown={submit}
 				handleEnter={enter}
 			/>
 		</div>

@@ -75,15 +75,14 @@ export default function CommunitySearch(props) {
 		/>
 	);
 
-	const submit = () => {
+	const enter = () => {
 		setSearchHeader("Results: ");
 		const input = {
 			language: Language.English,
 			name: searchInput,
 			sortDir: SortDir.Asc,
-			type: BcgnType.Community
+			type: BcgnType.NonProfit
 		}
-		console.log(input)
 		setCallTextInput(input)
 	}
 
@@ -94,7 +93,7 @@ export default function CommunitySearch(props) {
 				placeholder="Search for Communities..."
 				input={searchInput}
 				handleChange={handleSearchChange}
-				handleEnter={submit}
+				handleEnter={enter}
 			/>
 		</div>
 	);
